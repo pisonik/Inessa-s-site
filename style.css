@@ -23,13 +23,13 @@ a:active {
   color: lightslategrey;
 }
 a:visited {
-  color: olive;
+  color: rgb(151, 151, 1);
 }
 
 .avatar {
   width: 200px;
   border-radius: 100px;
-  box-shadow: 4px 4px 14px rgba(215, 110, 247, 25);
+  box-shadow: 2px 2px 15px rgba(215, 110, 247, 25);
 }
 
 .info {
@@ -79,11 +79,11 @@ box-sizing: border-box;
 } */
 
 .bg-pinkish {
-  background: rgb(172, 184, 224);
+  background: rgb(88, 104, 155);
 }
 
 .bg-purpleish {
-    background: rgb(124, 180, 184);
+    background: rgb(57, 90, 76);
   }
 
   .bg-pinkish2 {
@@ -113,7 +113,7 @@ box-sizing: border-box;
   padding-bottom: 10px;
 }
 
-.table td:nth-child(2), .table td:nth-child(3){
+.table td:nth-child(1), .table td:nth-child(2), .table td:nth-child(3){
   color: olive;
 }
 

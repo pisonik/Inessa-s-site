@@ -8,57 +8,81 @@
 </head>
 
 <body>
-    <class="container">
+    <div class="container">
         <div class="info">
             <img src="image.jpg" alt="whoops, the image is unavailable" class="avatar">
+            <div class="info-text">
+                <p>*this is not my photo, I just didn't want to put mine, sorry*</p>
+                <h1>Inessa Sargsyan</h1>
+                <p><strong>I'm just learning to code and I started with Vladilen's HTML course</strong></p>
 
-            <p>(this is not my photo, I just didn't want to put mine, sorry)</p>
-            <h1>Inessa Sargsyan</h1>
-            <p><strong>I'm just learning to code and I start with Vladilen's HTML course</strong></p>
+                <h4>Find me on</h4>
+                <a href="https://www.instagram.com/inessokik/" target="_blank">Instagram</a>
+                |
+                Telegram - @pisonik
+            </div>
         </div>
-        <h4>Find me on</h4>
-        <a href="https://www.instagram.com/inessokik/" target="_blank">Instagram</a>
-        |
-        Telegram - @pisonik
         <hr>
         <div class="card bg-pinkish">
             <h2>My hobbies</h2>
-            <ol class="list">
+            <ul class="list">
                 <li>Coding</li>
                 <li>Learning languages</li>
                 <li>Vlogging</li>
-            </ol>
+            </ul>
         </div>
 
         <div class="card bg-purpleish">
             <h2>Education</h2>
-            <a href="aua.html" target="_blank">Click to see</a>
+            <ul class="link-list">
+                <li><a href="https://aua.am/" target="_blank">Uni site</a></li>
+                <li><a href="https://baec.aua.am/" target="_blank">Major's site</a></li>
+            </ul>
         </div>
 
         <div class="card bg-pinkish2">
             <h2>Work experience</h2>
 
-            <table border="2">
+            <table class="table">
                 <tr>
-                    <th>Company</th>
-                    <th>Job</th>
+                    <td>Yerkir Daily</td>
+                    <td>SMM specialist</td>
+                    <td>2019-2020</td>
                 </tr>
                 <tr>
                     <td>Anna Salome Fashion marketing agency</td>
                     <td>SMM specialist</td>
-                </tr>
-                <tr>
-                    <td>Yerkir Daily</td>
-                    <td>SMM specialist</td>
+                    <td>2020-2021</td>
                 </tr>
                 <tr>
                     <td>NASA</td>
-                    <TD>Frontend developer</TD>
+                    <td>Frontend developer</td>
+                    <td>2023-2025</td>
                 </tr>
             </table>
         </div>
+        <div class="contact">
+            <h2>Contact me</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="Name">Your name:</label>
+                        <input type="text" id="Name" placeholder="Write your name here">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your email address:</label>
+                        <input type="email" id="email" placeholder="Write your email address here">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Your message:</label>
+                    <textarea id="text" cols="15" rows="2"></textarea>
+                </div>
 
-        </div>
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        <div style="margin-bottom: 500px;"></div>
+    </div>
 </body>
 
 </html>

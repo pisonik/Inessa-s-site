@@ -5,9 +5,8 @@
 }*/
 
 body {
-  background-color: rgb(255, 221, 227);
+  background-image: url(https://i.pinimg.com/564x/b1/11/a2/b111a25586bdc0df8e537f2cc77a8679.jpg);
   color: rgb(215, 110, 247);
-
   font: normal 16px "Roboto", sans-serif;
 }
 
@@ -26,31 +25,64 @@ a:visited {
   color: rgb(151, 151, 1);
 }
 
+.for-overlay {
+  position: relative;
+  width: 50%;
+}
+
 .avatar {
+  display: block;
   width: 200px;
   border-radius: 100px;
   box-shadow: 2px 2px 15px rgba(215, 110, 247, 25);
+  
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  border-radius: 100px;
+  transition: .5s ease;
+  background-color: #cf9fd1;
+}
+
+.for-overlay:hover .overlay {
+  opacity: 0.5;
+}
+
+.text-on-photo {
+  color: rgb(158, 21, 147);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 
 .info {
   display: flex;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 700px) {
-.info {
-  text-align: center;
-  display: block;
-}
+  .info {
+    text-align: center;
+    display: block;
+  }
 }
 
 .info-text {
   margin-left: 30px;
+  color: black;
 }
 
-.info-text h4 {
-  margin-bottom: 10px;
-}
 
 .info p {
   color: olive;
@@ -83,12 +115,12 @@ box-sizing: border-box;
 }
 
 .bg-purpleish {
-    background: rgb(57, 90, 76);
-  }
+  background: rgb(57, 90, 76);
+}
 
-  .bg-pinkish2 {
-    background: rgb(231, 174, 207);
-  }
+.bg-pinkish2 {
+  background: rgb(231, 174, 207);
+}
 
 .card {
   padding: 15px 20px;
@@ -96,69 +128,71 @@ box-sizing: border-box;
   border-radius: 15px;
 }
 
-.list{
-    padding: 0 20px;
+.list {
+  padding: 0 20px;
 }
 
-.list li{
-    color: olive;
-    margin-bottom: 10px;
+.list li {
+  color: olive;
+  margin-bottom: 10px;
 }
 
-.table{
+.table {
   width: 100%;
 }
 
-.table td{
+.table td {
   padding-bottom: 10px;
 }
 
-.table td:nth-child(1), .table td:nth-child(2), .table td:nth-child(3){
+.table td:nth-child(1),
+.table td:nth-child(2),
+.table td:nth-child(3) {
   color: olive;
 }
 
-.link-list{
+.link-list {
   list-style: none;
   padding: 0;
 }
 
-.link-list li{
+.link-list li {
   margin-bottom: 10px;
   /* padding-bottom: 5px; */
   border-bottom: 1px solid olive;
 }
 
 .contact h2 {
-text-align: center;
+  text-align: center;
 }
 
-.form-group label{
-display: block;
-font-size: 14px;
-color:rgb(215, 110, 247)
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: rgb(215, 110, 247);
 }
 
 .form-group input,
-.form-group textarea{
+.form-group textarea {
   width: 100%;
   box-sizing: border-box;
-  border: none; 
- background: transparent;
- border-bottom: 1px solid olive;
-color: olive;
-padding: 15px 0 10px;
-outline: none;
-font-family: inherit;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid olive;
+  color: olive;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
 }
 
 .row {
-display: flex;
-margin-bottom: 20px;
-}  
+  display: flex;
+  margin-bottom: 20px;
+}
 
-.row > .form-group{
-width: 50%;
-margin-right: 20%;
+.row > .form-group {
+  width: 50%;
+  margin-right: 20%;
 }
 
 .row > .form-group:first-child {
